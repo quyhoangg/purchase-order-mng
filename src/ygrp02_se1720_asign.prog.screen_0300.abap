@@ -1,0 +1,12 @@
+PROCESS BEFORE OUTPUT.
+  MODULE status_0300.
+*
+PROCESS AFTER INPUT.
+
+  MODULE exit AT EXIT-COMMAND.
+
+  MODULE user_command_0300.
+
+PROCESS ON VALUE-REQUEST.
+
+  FIELD p_file MODULE f4_select_upload_file.

@@ -1,0 +1,12 @@
+PROCESS BEFORE OUTPUT.
+  MODULE status_0420.
+
+PROCESS AFTER INPUT.
+
+  MODULE exit AT EXIT-COMMAND.
+
+  MODULE user_command_0420.
+
+PROCESS ON VALUE-REQUEST.
+
+  FIELD gs_po_item-gv_ebelp MODULE value_request_ebelp.
